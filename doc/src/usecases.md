@@ -55,6 +55,7 @@ Different code modifications will be easier at different levels of this toolchai
 1. Answering counterfactuals
 2. Instrumenting code to extract additional insight
 3. Semantic Model Validation
+4. Integrating parameters from disparate models
 
 ### Answering Counterfactuals
 
@@ -111,4 +112,26 @@ evaluate the approximation on an $x$ outside of this region, we do not know if
 the approximation is close, and cannot trust the model. Program analysis can
 help scientists to identify reasons to be sceptical of model validity.
 
+
+
+### Use Case Integrating Model Variables from disparate models
+Created: December 20th 2018 in Issue #23
+Last Updated: January 31st 2019
+
+Researcher wants to integrate model variables (and potential parameters previously set to those variables)
+from another instance of a model from the same family e.g. SIR Paper 1 and SIR Paper 2
+
+- User Step 1. Researcher provides or selects source code scripts using supported model libraries to system
+- System Step 1. If necessary, System perform initial information extraction on scripts from both papers
+- System Step 2. System determines same variables shared across both models
+- System Step 3. System determines different variables within each model
+- System Step 4. System determines which variables can be integrated within a single model
+  - Note: What is / will be the process for doing this within the system?
+- User Step 2. Researcher selects which variables should be integrated
+- System Step 4. System uses a meta-model as a guide to create a new integrated model 
+relying on variable inclusion/parameter setting information provided by meta-model
+  - Note: What else is needed?
+- System Step 5. System validates the efficacy of the newly generated model based on different types ([cite]) of validation criteria
+- User Step 3. Researcher is given newly created model
+  - Note: Could the system output new model source code with human readable natural language to document functions and parameters? 
 
