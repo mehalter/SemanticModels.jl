@@ -2,7 +2,7 @@
 
 ## Release v0.1
 
-Release v0.1 includes an initial version of every step in the SemanticModels pipeline. 
+Release v0.1 includes an initial version of every step in the SemanticModels pipeline.
 Users can now extract information, build knowledge graphs, and generate new models.
 
 The following is a summary of the most important new features and updates:
@@ -13,9 +13,8 @@ The following is a summary of the most important new features and updates:
     - [`SemanticModels.Dubstep.LPCtx`](@ref) allows you to modify the norms used in a model.
     - [`SemanticModels.Dubstep.GraftCtx`](@ref) allows grafting components of one model onto another.
   - Parsers
-    - [`Parsers.parsefile`](@ref) reads in a julia source file as an expression.
-    - [`Parsers.defs`](@ref) extracts  all of the code definitions from a module definition expression.
-    - [`Parsers.edges`](@ref) extracts edges for the knowledge graph from code.
+    - [`Parsers.parsefile`](@ref) reads in a julia source file as an expression
+    - [`Parsers.defs`](@ref) extracts from a module definition expression, all the code definitions
   - Graphs
     - A knowledge graph schema [Knowledge Graphs](@ref).
     - [`Graphs.insert_edges_from_jl`](@ref) builds a knowledge graph from extracted edges.
@@ -23,9 +22,9 @@ The following is a summary of the most important new features and updates:
   - `test/transform/ode.jl` shows how to perturb an ODE with overdub.
   - `test/transform/varextract.jl` shows how to use a compiler pass to extract dynamic analysis information.
 - Scripts
-  - `bin/extract.jl` extracts knowledge elements from parsed markdown and source code files.
-  - `bin/graft.jl` performs metamodeling by grafting a component of one model onto another.
-  
+  - `bin/extract.jl` extracts knowledge elements from source code files
+  - `bin/graft.jl` performs metamodeling by grafting a component of one model onto another
+
 
 - New docs pages
   - [Intended Use Cases](@ref)
