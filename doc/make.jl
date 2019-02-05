@@ -72,7 +72,7 @@ pages       = Any[
  make        = nothing,
  devbranch   = "travis-testing",
  devurl      = "",
- repo        = "github.com/jpfairbanks/SemanticModels.jl.git",
+ repo        = "github.com/mehalter/SemanticModels.jl.git",
  # julia       = "stable",
  # osname      = "linux"
  )
