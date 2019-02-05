@@ -65,17 +65,14 @@ pages       = Any[
 ]
 )
 
- deploydocs(
- root        = "doc",
- target      = "build",
- deps        = nothing,
- make        = nothing,
- devbranch   = "travis-testing",
- devurl      = "",
- repo        = "github.com/mehalter/SemanticModels.jl.git",
- # julia       = "stable",
- # osname      = "linux"
- )
+deploydocs(
+  target      = "build",
+  deps        = nothing,
+  make        = nothing,
+  repo        = "github.com/mehalter/SemanticModels.jl.git",
+  # julia       = "stable",
+  # osname      = "linux"
+)
 
 # # rm(normpath(@__FILE__, "../src/contributing.md"))
 # # rm(normpath(@__FILE__, "../src/license.md"))
